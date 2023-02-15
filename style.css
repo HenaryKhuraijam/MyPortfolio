@@ -6,12 +6,12 @@
 
 :is(h1, h2, h3, p) { margin: 15px 0; }
 
+a { text-decoration: none; }
+
 body {
   font: 400 15px/24px Poppins, sans-serif;
   color: #344563;
 }
-
-a {text-decoration: none;}
 
 .header {
   display: flex;
