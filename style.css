@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:is(h1, h2, h3, p) { margin: 15px 0; }
+
+a { text-decoration: none; }
+
+body {
+  font: 400 15px/24px Poppins, sans-serif;
+  color: #344563;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1em 3.4%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+#h1 {
+  color: #172b4d;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.Mylogo {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  padding: 136px 24px;
+  gap: 12px;
+}
+
+#introduce {
+  background-image: url(images/topL.png), url(images/topC.png), url(images/topR.png), url(images/bottomL.png), url(images/bottomC.png), url(images/bottomR.png);
+  background-position: left top, center top, right top, left bottom, center 95%, right bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-color: #fff;
+  border-bottom-left-radius: 100px;
+}
+
+.social-icon {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.social-item img {
+  width: 20px;
+  height: 20px;
+}
+
+.social h3 {
+  color: #7f8cff;
+}
