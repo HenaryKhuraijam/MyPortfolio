@@ -16,14 +16,22 @@ body {
 .header {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 0.7% 3.4%;
+  padding: 1em 3.4%;
   width: 100%;
   left: 0;
   top: 0;
   position: fixed;
   background-color: #fff;
   justify-content: space-between;
+}
+
+#h1 {
+  color: #172b4d;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: left;
 }
 
 .Mylogo {
@@ -38,7 +46,11 @@ body {
   flex-direction: column;
   padding: 136px 24px;
   gap: 12px;
-  background-image: url(images/backimge.png);
+}
+
+#introduce {
+  background-image: url(images/topL.png), url(images/topC.png), url(images/topR.png), url(images/bottomL.png), url(images/bottomC.png), url(images/bottomR.png);
+  background-position: left top, center top, right top, left bottom, center 95%, right bottom;
   background-repeat: no-repeat;
   width: 100%;
   background-color: #fff;
@@ -54,4 +66,8 @@ body {
 .social-item img {
   width: 20px;
   height: 20px;
+}
+
+.social h3 {
+  color: #7f8cff;
 }
