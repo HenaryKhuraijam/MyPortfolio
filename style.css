@@ -39,6 +39,7 @@ body {
   line-height: 20px;
   color: #6070ff;
 }
+
 .wrapper {
   display: grid;
   grid-template-rows: calc(100vh - 48px) repeat(3, auto);
