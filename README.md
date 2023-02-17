@@ -1,6 +1,6 @@
 # Portfolio
 
-> My personal Portfolio Website .
+> This project is a part of Microverse Software Development Course. Here I am developing a Responsive Profile Website. The project is in the initial stage of development. Currently, it showcases a simple mobile version.
 
 ## Built With
 
@@ -69,5 +69,4 @@ Give a [⭐️](../../stargazers) if you like this project!
 - All my fellow micronauts.
 
 ## 📝 License
-device-width
 This project is [MIT](LICENSE) licensed.
