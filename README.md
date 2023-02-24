@@ -1,6 +1,6 @@
 # Portfolio
 
-> My personal Portfolio Website .
+> This project is a part of Microverse Software Development Course. Here I am developing a contact section for mobile first project. The project is in the initial stage of development. Currently, it showcases a simple mobile version.
 
 ## Built With
 
@@ -49,6 +49,8 @@ Go to the Folder where want to copy this repo and type the following cmds in you
 - LinkedIn: [Henary Khuraijam](https://www.linkedin.com/in/henary-khuraijam)
 
 ## 🔭 Future Features <a name="future-features"></a>
+   -Making responsive website
+   -Making desktop version website
 
  [To Add more work pages and style]
 
@@ -69,5 +71,4 @@ Give a [⭐️](../../stargazers) if you like this project!
 - All my fellow micronauts.
 
 ## 📝 License
-device-width
 This project is [MIT](LICENSE) licensed.
