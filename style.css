@@ -298,6 +298,14 @@ form {
   padding: 12px 24px;
   margin-bottom: 7px;
   margin-top: 7px;
+  scale: 0.95;
+  transition-property: border scale;
+  transition-duration: 1s;
+}
+
+.form-input:hover {
+  border: 3px solid #000;
+  scale: 0.99;
 }
 
 .input-line { height: 48px; }
