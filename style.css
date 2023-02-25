@@ -344,4 +344,37 @@ form {
     height: 120px;
     width: 120px;
   }
+
+  #contact-msg {
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  #intro {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #h1 {
+    height: 122px;
+    width: 920px;
+  }
+
+  #describe {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  #contact-placeholder {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  #button {
+    margin: auto;
+  }
 }
