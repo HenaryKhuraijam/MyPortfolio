@@ -344,4 +344,10 @@ form {
     height: 120px;
     width: 120px;
   }
+
+  #contact-msg {
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+  }
 }
