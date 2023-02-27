@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[link not available]()
+[Live Demo](https://henarykhuraijam.github.io/MyPortfolio/)
 
 ## Getting started
 
