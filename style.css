@@ -20,7 +20,8 @@ body {
   width: 100%;
   left: 0;
   top: 0;
-  position: fixed;
+  position: sticky;
+  z-index: 12;
   background-color: #fff;
   justify-content: space-between;
 }
@@ -36,27 +37,29 @@ body {
 .Mylogo {
   text-decoration: none;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 1.2;
   color: #434eb1;
 }
 
 .wrapper {
   display: grid;
-  grid-template-rows: calc(100vh - 48px) repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
   background-color: #f7f7f9;
-  margin-top: 48px;
 }
 
 .headline {
   display: flex;
-  flex-direction: column;
-  padding: 136px 24px;
-  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 54px);
+  height: auto;
 }
 
 .headline :is(h1, p) {
   margin: 0;
 }
+
+h1 > span { display: block; }
 
 #introduce {
   background-image: url(images/topL.png), url(images/topC.png), url(images/topR.png), url(images/bottomL.png), url(images/bottomC.png), url(images/bottomR.png);
@@ -65,6 +68,10 @@ body {
   width: 100%;
   background-color: #fff;
   border-bottom-left-radius: 100px;
+}
+
+#intro {
+  width: 90%;
 }
 
 .social-icon {
@@ -178,8 +185,8 @@ li.client::before {
 }
 
 .btn {
+  display: flex;
   width: fit-content;
-  height: 48px;
   border-radius: 8px;
   padding: 12px;
   font-size: 17px;
@@ -353,12 +360,6 @@ form {
 
   #intro {
     width: 60%;
-    margin: 0 auto;
-  }
-
-  #h1 {
-    height: 122px;
-    width: 920px;
   }
 
   #describe {
