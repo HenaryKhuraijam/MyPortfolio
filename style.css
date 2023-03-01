@@ -37,7 +37,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   line-height: 20px;
-  color: #6070ff;
+  color: #434eb1;
 }
 
 .wrapper {
@@ -79,7 +79,7 @@ body {
 }
 
 .social-media p {
-  color: #7f8cff;
+  color: #3b459d;
 }
 
 .works {
@@ -147,7 +147,7 @@ body {
 .project-summary > li::before {
   content: '\2022';
   margin-right: 0.5em;
-  color: #7a869a;
+  color: #515966;
 }
 
 li.client::before {
@@ -155,7 +155,7 @@ li.client::before {
   margin-right: 0;
 }
 
-.project-summary { color: #7a869a; }
+.project-summary { color: #515966; }
 
 .client { color: #344563; }
 
@@ -174,7 +174,7 @@ li.client::before {
   background-color: #ebebff;
   font-size: 12px;
   line-height: 16px;
-  color: #6070ff;
+  color: #3b459d;
 }
 
 .btn {
