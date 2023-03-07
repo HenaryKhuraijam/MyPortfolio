@@ -41,6 +41,21 @@ body {
   color: #434eb1;
 }
 
+.main-details {
+  display: none;
+}
+
+.menu :has('click') {
+  display: flex;
+  flex-direction: column;
+  background-color: #396df2;
+
+}
+
+.Union {
+margin-left: 75%;
+}
+
 .wrapper {
   display: grid;
   grid-template-rows: repeat(4, auto);
@@ -330,6 +345,19 @@ form {
 .nav-links-desktop { display: none; }
 
 @media only screen and (min-width: 769px) {
+
+  .Union {
+    display: none;
+  }
+   
+
+  .main-details {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    
+  }
+
   .reverse {
     flex-direction: row-reverse;
   }

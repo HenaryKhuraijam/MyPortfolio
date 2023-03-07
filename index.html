@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Henary's Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="popup.css">
   <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -17,10 +18,23 @@
 <body>
   <header class="header">
     <a class="Mylogo" href="#">Henary</a>
-    <nav>
-      <a href="#"><img src="images/Union.png" alt="Union"></a>
+    <img aria-role="button" class="Union" src="images/Union.png" alt="Union" id="menu" aria-label="Hamburger Menu">
+  
+    <nav id="nav">
+      <ul class="main-details" id="nav__list">
+        <li>
+          <a class="menu1" href="#introduce">Portoflio</a>
+        </li>
+        <li>
+          <a class="menu2" href="#about">About</a>
+        </li>
+        <li>
+          <a class="menu3" href="#contacts">Contact</a>
+        </li>
+      </ul>
     </nav>
   </header>
+
   <main class="wrapper">
     <section class="headline" id="introduce">
       <div id="intro">
@@ -210,6 +224,7 @@
       </form>
     </div>
   </footer>
+  <script defer src="index.js"></script>
 </body>
 
 </html>
