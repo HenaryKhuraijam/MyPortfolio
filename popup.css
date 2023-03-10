@@ -6,8 +6,10 @@
   background-color: hsl(234 100% 63% / 0.80);
   backdrop-filter: blur(6px);
   width: 100%;
-  height: 100vw;
-  padding: 3rem;
+  height: 100%;
+  padding: 12px; 
+  
+  
 }
 
 .menu-open {
@@ -21,11 +23,37 @@
 
 .popup > ul {
   display: flex;
+  gap: 40px;
+  margin-top: 80px;
+  font-family: 'Poppins';
   flex-direction: column;
   list-style: none;
   color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  text-decoration: none;
+  
 }
 
 body:has(.popup) {
   overflow: hidden;
+}
+
+.cross {
+  display: flex;
+  position: absolute;
+  margin-left: 85%;
+  margin-top: 10%;
+  background-color: transparent;
+  border: none;
+  z-index: 1000000;
+
+
+}
+
+@media only screen and (min-width: 769px) {
+  .cross {
+    display: none;
+  }
 }

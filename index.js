@@ -3,5 +3,5 @@ function menuClickedHandler(e) {
   nav.classList.toggle("popup");
 }
 
-document.getElementById("menu").addEventListener('click', menuClickedHandler);
-document.getElementById("nav").addEventListener('click', menuClickedHandler);
+document.getElementById("menu").addEventListener('click', 'menuClickedHandler');
+document.getElementById("nav").addEventListener('click', 'menuClickedHandler');
