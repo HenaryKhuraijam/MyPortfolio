@@ -49,11 +49,10 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #396df2;
-
 }
 
 .Union {
-margin-left: 75%;
+  margin-left: 75%;
 }
 
 .wrapper {
@@ -345,17 +344,14 @@ form {
 .nav-links-desktop { display: none; }
 
 @media only screen and (min-width: 769px) {
-
   .Union {
     display: none;
   }
-   
 
   .main-details {
     display: flex;
     gap: 20px;
     list-style: none;
-    
   }
 
   .reverse {
@@ -413,11 +409,11 @@ form {
   z-index: 9999;
   top: 0;
   left: 0;
-  background-color: hsl(234 100% 63% / 0.80);
+  background-color: hsl(234 100% 63% / 0.8);
   backdrop-filter: blur(6px);
   width: 100%;
   height: 100%;
-  padding: 12px;  
+  padding: 12px;
 }
 
 .menu-open {
@@ -433,7 +429,7 @@ form {
   display: flex;
   gap: 40px;
   margin-top: 80px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   flex-direction: column;
   list-style: none;
   color: #fff;
@@ -441,7 +437,6 @@ form {
   font-weight: 600;
   line-height: 44px;
   text-decoration: none;
-  
 }
 
 body:has(.popup) {
