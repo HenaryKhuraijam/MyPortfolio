@@ -7,20 +7,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Henary's Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="windows.css">
+  
+  <link rel="stylesheet" href="<link rwel=" preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
     <a class="Mylogo" href="#">Henary</a>
-    <nav>
-      <a href="#"><img src="images/Union.png" alt="Union"></a>
+    <img aria-role="button" class="Union" src="images/Union.png" alt="Union" id="menu" aria-label="Hamburger Menu">
+  
+    <nav id="nav">
+      <img class="cross" id="cross-btn" src="icons/Cancel-Icon.svg" alt="Cancel-Icon">
+
+      <ul class="main-details" id="nav__list">
+        <li>
+          <a class="menu1" href="#introduce">Portoflio</a>
+        </li>
+        <li>
+          <a class="menu2" href="#about">About</a>
+        </li>
+        <li>
+          <a class="menu3" href="#contacts">Contact</a>
+        </li>
+      </ul>
     </nav>
   </header>
+
   <main class="wrapper">
     <section class="headline" id="introduce">
       <div id="intro">
@@ -50,6 +66,7 @@
       </div>
     </section>
     <section class="works" id="works">
+      <div id="cardwork1">
       <div class="cards" id="card1">
         <div class="snapshoot-placeholders">
           <img class="snapshoot" src="images/SnapshootD1.jpg" alt="Project-1 Snapshoot">
@@ -70,9 +87,14 @@
             <li class="tags">css</li>
             <li class="tags">javascripts</li>
           </ul>
-          <button class="btn" type="button">See Project</button>
+          <button id="btn1" class="btn" type="button">See Project</button>
+          <div class="live-source">
+          <button  class="btn" type="button">See live</button>
+          <button  class="btn" type="button">See Source</button>
+        </div>
         </div>
       </div>
+    </div>
       <div class="cards reverse" id="card2">
         <div class="snapshoot-placeholders">
           <img class="snapshoot" src="images/SnapshootD2.jpg" alt="Project-2 Snapshoot">
@@ -93,7 +115,7 @@
             <li class="tags">css</li>
             <li class="tags">javascripts</li>
           </ul>
-          <button class="btn" type="button">See Project</button>
+          <button id="btn2" class="btn" type="button">See Project</button>
         </div>
       </div>
       <div class="cards" id="card3">
@@ -116,7 +138,7 @@
             <li class="tags">css</li>
             <li class="tags">javascripts</li>
           </ul>
-          <button class="btn" type="button">See Project</button>
+          <button id="btn3" class="btn" type="button">See Project</button>
         </div>
       </div>
       <div class="cards reverse" id="card4">
@@ -139,7 +161,7 @@
             <li class="tags">css</li>
             <li class="tags">javascripts</li>
           </ul>
-          <button class="btn" type="button">See Project</button>
+          <button id="btn4" class="btn" type="button">See Project</button>
         </div>
       </div>
     </section>
@@ -210,6 +232,7 @@
       </form>
     </div>
   </footer>
+  <script defer src="index.js"></script>
 </body>
 
 </html>
