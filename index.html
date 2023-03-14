@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="popup.css">
   <link rel="stylesheet" href="windows.css">
+  
   <link rel="stylesheet" href="<link rwel=" preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 </head>
 
@@ -22,7 +22,7 @@
     <img aria-role="button" class="Union" src="images/Union.png" alt="Union" id="menu" aria-label="Hamburger Menu">
   
     <nav id="nav">
-      <img class="cross" src="icons/Cancel-Icon.svg" alt="Cancel-Icon">
+      <img class="cross" id="cross-btn" src="icons/Cancel-Icon.svg" alt="Cancel-Icon">
 
       <ul class="main-details" id="nav__list">
         <li>
@@ -67,6 +67,7 @@
       </div>
     </section>
     <section class="works" id="works">
+      <div id="cardwork1">
       <div class="cards" id="card1">
         <div class="snapshoot-placeholders">
           <img class="snapshoot" src="images/SnapshootD1.jpg" alt="Project-1 Snapshoot">
@@ -88,8 +89,13 @@
             <li class="tags">javascripts</li>
           </ul>
           <button id="btn1" class="btn" type="button">See Project</button>
+          <div class="live-source">
+          <button  class="btn" type="button">See live</button>
+          <button  class="btn" type="button">See Source</button>
+        </div>
         </div>
       </div>
+    </div>
       <div class="cards reverse" id="card2">
         <div class="snapshoot-placeholders">
           <img class="snapshoot" src="images/SnapshootD2.jpg" alt="Project-2 Snapshoot">

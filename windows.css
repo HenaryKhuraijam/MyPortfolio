@@ -1,0 +1,30 @@
+.popup-windows {  
+    position: fixed;
+    z-index: 110000;
+    top: 0;
+    left: 0;
+    background-color: hsla(231, 8%, 49%, 0.8);
+    backdrop-filter: blur(6px);
+    width: 100%;
+    height: 100%;
+}
+
+.popup-windows > #card1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;background-color: aqua;
+    margin-top: 40px;
+    margin-left: 25px;
+    align-items: center;
+}
+.live-source {
+    display: none;
+}
+.popup-windows .live-source {
+   display: flex; 
+}
+
+@media only screen and (min-width: 769px) {
+    
+
+  }

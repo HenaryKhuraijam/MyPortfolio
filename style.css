@@ -20,7 +20,7 @@ body {
   width: 100%;
   left: 0;
   top: 0;
-  position: sticky;
+  position: fixed;
   z-index: 12;
   background-color: #fff;
   justify-content: space-between;
