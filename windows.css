@@ -3,26 +3,62 @@
   z-index: 110000;
   top: 0;
   left: 0;
-  background-color: hsla(231, 8%, 49%, 0.8);
+  background-color:  #C1C7D0(231, 8%, 49%, 0.8);
   backdrop-filter: blur(6px);
-  width: 100%;
+  width: 100%; 
   height: 100%;
+}
+body:has(.popup-windows ) {
+  overflow: hidden;
 }
 
 .popup-windows > #card1 {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  background-color: rgb(124, 214, 214);
-  margin-top: 40px;
+  width: 85%;
+  min-width: 325px;
+  height: fit-content;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1%;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  
   margin-left: 25px;
-  align-items: center;
+  margin-top: 0;
+
 }
 
 .live-source {
   display: none;
 }
 
+.popup-descriptions {
+  display: none;
+}
+
+.popup-windows .project-descriptions{
+  display:none;
+}
+
+.popup-windows .popup-descriptions{
+  display: flex;
+  font-family: Poppins;
+  
+}
+.popup-windows #title {
+  margin-top: 0;
+}
+
 .popup-windows .live-source {
   display: flex;
+  gap: 14px;
+
 }
+
+.popup-windows #btn1 {
+  display: none;
+}
+
