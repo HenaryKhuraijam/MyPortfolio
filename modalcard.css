@@ -60,6 +60,17 @@ body:has(.modal__card) {
     gap: 1.2em;
   }
 
+  .modal__card .modal img {
+    width: 100%;
+    max-width: 500px;
+    height: 265px;
+  }
+
+  .modal {
+    display: flex;
+    justify-content: center;
+  }
+
   .modal__card .cards {
     padding: 24px;
     display: flex;

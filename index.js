@@ -12,7 +12,6 @@ function menuClickedHandler() {
 
 document.getElementById('menu').addEventListener('click', menuClickedHandler);
 
-// Modal-card
 const pro = [
   {
     id: 1,
@@ -59,6 +58,8 @@ const pro = [
     links: ['https://henarykhuraijam.github.io/MyPortfolio/', 'https://github.com/HenaryKhuraijam/MyPortfolio'],
   },
 ];
+
+// Modal-card
 const showModal = (pid) => {
   const curPro = pro[pid];
   const sec = document.createElement('section');
