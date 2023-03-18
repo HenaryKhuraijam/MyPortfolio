@@ -1,3 +1,4 @@
+// Mobile-menu
 function menuClickedHandler() {
   const nav = document.getElementById('nav');
   nav.classList.toggle('popup');
@@ -11,6 +12,85 @@ function menuClickedHandler() {
 
 document.getElementById('menu').addEventListener('click', menuClickedHandler);
 
+// Modal-card
+const pro = [
+  {
+    id: 1,
+    name: 'Tonic',
+    Image: 'images/SnapshootD1.jpg',
+  },
+  {
+    id: 2,
+    name: 'Multi-Post Stories',
+    Image: 'images/SnapshootD2.jpg',
+  },
+  {
+    id: 3,
+    name: 'Tonic',
+    Image: 'images/SnapshootD3.jpg',
+  },
+  {
+    id: 4,
+    name: 'Multi-Post Stories',
+    Image: 'images/SnapshootD4.jpg',
+  },
+];
+const showModal = (pid) => {
+  const curPro = pro[pid];
+  const sec = document.createElement('section');
+  sec.className = 'modal__card';
+  sec.id = 'modal-card';
+  sec.innerHTML = `<div class="cards" id="card1">
+  <div class="topic">
+  <h2 class="project-titles">${curPro.name} <img class="closebtn" id="closeButton" src="icons/cancelIconBlack.svg" alt="Cancel-Icon"></h2>
+    <ul class="inline-li project-summary">
+      <li class="client">CANOPY</li>
+      <li class="type">Back End Dev</li>
+      <li class="year">2015</li>
+    </ul> 
+  </div>
+  
+  <div class="snapshoot-placeholders modal">
+    <img class="snapshoot" src=${curPro.Image} alt="Project-1 Snapshoot">
+  
+  </div>
+  <div class="modal-discription">
+    
+    <p class="mobile-discription">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent  
+     </p>
+    
+     <div class="language">
+    <ul class="inline-li">
+      <li class="tags">html</li>
+      <li class="tags">css</li>
+      <li class="tags">javascripts</li>
+      <li class="tags">Ruby</li>
+      <li class="tags">Bootstrap</li>
+  
+    </ul>
+   <div class="live-btn">
+    <button  class="btn" type=button"">See live <img class="live-icon" src="icons/liveIcon.svg" alt=""> </button>
+    <button  class="btn" type="button">See Source <img class="live-icon" src="icons/buttonIconGitHub.svg" alt=""></button></div>
+  </div>
+  </div>
+  </div>`;
+  document.body.appendChild(sec);
+
+  const close = document.getElementById('closeButton');
+  close.addEventListener('click', () => {
+    document.body.removeChild(sec);
+  });
+};
+
+const cardBtnClicked = (e) => {
+  e.preventDefault();
+  showModal(e.target.id - 1);
+};
+const modalButtons = document.querySelectorAll('.cards button');
+modalButtons.forEach((button) => button.addEventListener('click', cardBtnClicked));
+
+// validateform
 document.getElementById('contact-form').addEventListener('submit', (e) => {
   const errorMsg = document.getElementById('error-message');
   const arrEmail = document.getElementById('email').value;
