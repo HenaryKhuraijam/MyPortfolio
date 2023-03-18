@@ -17,22 +17,46 @@ const pro = [
   {
     id: 1,
     name: 'Tonic',
-    Image: 'images/SnapshootD1.jpg',
+    summaries: { client: 'Self-Employed', role: 'Solo', year: '2022' },
+    details: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+     when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    skills: ['html', 'css', 'javascripts'],
+    image: 'images/SnapshootD1.jpg',
+    links: ['https://henarykhuraijam.github.io/MyPortfolio/', 'https://github.com/HenaryKhuraijam/MyPortfolio'],
   },
   {
     id: 2,
     name: 'Multi-Post Stories',
-    Image: 'images/SnapshootD2.jpg',
+    summaries: { client: 'Self-Employed', role: 'Solo', year: '2022' },
+    details: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+     when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    skills: ['html', 'css', 'javascripts'],
+    image: 'images/SnapshootD2.jpg',
+    links: ['https://henarykhuraijam.github.io/MyPortfolio/', 'https://github.com/HenaryKhuraijam/MyPortfolio'],
   },
   {
     id: 3,
     name: 'Tonic',
-    Image: 'images/SnapshootD3.jpg',
+    summaries: { client: 'Self-Employed', role: 'Solo', year: '2022' },
+    details: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+     when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    skills: ['html', 'css', 'javascripts'],
+    image: 'images/SnapshootD3.jpg',
+    links: ['https://henarykhuraijam.github.io/MyPortfolio/', 'https://github.com/HenaryKhuraijam/MyPortfolio'],
   },
   {
     id: 4,
     name: 'Multi-Post Stories',
-    Image: 'images/SnapshootD4.jpg',
+    summaries: { client: 'Self-Employed', role: 'Solo', year: '2022' },
+    details: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+     when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    skills: ['html', 'css', 'javascripts'],
+    image: 'images/SnapshootD4.jpg',
+    links: ['https://henarykhuraijam.github.io/MyPortfolio/', 'https://github.com/HenaryKhuraijam/MyPortfolio'],
   },
 ];
 const showModal = (pid) => {
@@ -44,21 +68,21 @@ const showModal = (pid) => {
   <div class="topic">
   <h2 class="project-titles">${curPro.name} <img class="closebtn" id="closeButton" src="icons/cancelIconBlack.svg" alt="Cancel-Icon"></h2>
     <ul class="inline-li project-summary">
-      <li class="client">CANOPY</li>
-      <li class="type">Back End Dev</li>
-      <li class="year">2015</li>
+      <li class="client">${curPro.summaries.client}</li>
+      <li class="type">${curPro.summaries.role}</li>
+      <li class="year">${curPro.summaries.year}</li>
     </ul> 
   </div>
   
   <div class="snapshoot-placeholders modal">
-    <img class="snapshoot" src=${curPro.Image} alt="Project-1 Snapshoot">
+    <img class="snapshoot" src=${curPro.image} alt="">
   
   </div>
   <div class="modal-discription">
     
     <p class="mobile-discription">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent  
-     </p>
+    ${curPro.details} 
+    </p>
     
      <div class="language">
     <ul class="inline-li">
