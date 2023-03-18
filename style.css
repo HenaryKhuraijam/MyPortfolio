@@ -114,6 +114,7 @@ h1 > span { display: block; }
 
 .cards {
   display: flex;
+  flex-direction: column;
   width: 85%;
   min-width: 325px;
   height: auto;
@@ -284,6 +285,7 @@ li.client::before {
   width: 99%;
 }
 
+
 .footer {
   display: flex;
   justify-content: center;
@@ -342,11 +344,14 @@ form {
 
 .input-line { height: 48px; }
 .nav-links-desktop { display: none; }
-
 @media only screen and (min-width: 769px) {
   .Union {
     display: none;
   }
+
+#card1 {
+  margin-left: 7%;
+}
 
   .main-details {
     display: flex;
@@ -403,7 +408,7 @@ form {
     margin: auto;
   }
 }
-
+ /* popup */
 .popup {
   position: fixed;
   z-index: 9999;
@@ -456,3 +461,4 @@ body:has(.popup) {
   border: none;
   z-index: 1000000;
 }
+
