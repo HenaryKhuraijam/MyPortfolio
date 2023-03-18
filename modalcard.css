@@ -1,0 +1,84 @@
+.modal__card {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(216 14% 79% / 0.75);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body:has(.modal__card) {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.modal__card .modal img {
+  width: 100%;
+  height: 220px;
+}
+
+.modal__card .cards {
+  padding: 0.5em;
+}
+
+.modal__card .inline-li {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.project-titles {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal__card .cards > * {
+  width: 100%;
+}
+
+.live-btn {
+  display: flex;
+  gap: 0.6em;
+}
+
+.live-btn .btn {
+  display: flex;
+  gap: 0.7em;
+}
+
+@media only screen and (min-width: 769px) {
+  .modal-discription {
+    display: flex;
+    gap: 1.2em;
+  }
+
+  .modal__card .modal img {
+    width: 100%;
+    max-width: 500px;
+    height: 265px;
+  }
+
+  .modal {
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal__card .cards {
+    padding: 24px;
+    display: flex;
+    gap: 35px;
+  }
+
+  .mobile-discription {
+    margin-top: 0;
+    width: 70%;
+  }
+}
