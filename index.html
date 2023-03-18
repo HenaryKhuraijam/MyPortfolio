@@ -7,8 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Henary's Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="windows.css">
-  
   <link rel="stylesheet" href="<link rwel=" preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -220,7 +218,7 @@
         that you need built or a project that needs coding. I’d love to help
         with it
       </p>
-      <form class="form flex" action="https://formspree.io/f/mqkoalvp" method="POST" enctype="multipart/form-data">
+      <form id="contact-form" class="form flex" action="https://formspree.io/f/mqkoalvp" method="POST" enctype="multipart/form-data">
 
         <input class="form-input input-line" type="text" placeholder="Enter your name" name="name" maxlength="30"
           required />
@@ -228,11 +226,11 @@
           required />
         <textarea class="form-input" id="textarea" rows="10" maxlength="500" placeholder="Write your message here"
           name="message" required></textarea>
+        <div class="error-message" id ="error-message"></div>
         <input class="btn" id="button" type="submit" value="Get It Touch" />
       </form>
     </div>
   </footer>
   <script defer src="index.js"></script>
 </body>
-
 </html>
