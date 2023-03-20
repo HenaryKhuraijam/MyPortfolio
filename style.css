@@ -354,7 +354,7 @@ form {
     list-style: none;
   }
 
-  .reverse {
+  .cards:nth-child(2n) {
     flex-direction: row-reverse;
   }
 

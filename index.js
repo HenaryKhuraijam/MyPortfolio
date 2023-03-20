@@ -12,6 +12,7 @@ function menuClickedHandler() {
 
 document.getElementById('menu').addEventListener('click', menuClickedHandler);
 
+// Create object for work-cards/popup
 const pro = [
   {
     id: 1,
@@ -59,7 +60,37 @@ const pro = [
   },
 ];
 
-// Modal-card
+// Add work-cards
+const addProjects = () => {
+  const works = document.getElementById('works');
+  works.innerHTML = pro.map((work) => `<div class="cards" id="card${work.id}">
+<div class="snapshoot-placeholders">
+  <img class="snapshoot" src=${work.image} alt="">
+</div>
+<div class="projects">
+  <h2 class="project-titles">${work.name}</h2>
+  <ul class="inline-li project-summary">
+    <li class="client">${work.summaries.client}</li>
+    <li class="type">${work.summaries.role}</li>
+    <li class="year">${work.summaries.year}</li>
+  </ul>
+  <p class="project-descriptions">
+  ${work.details}
+  </p>
+  <ul class="inline-li">
+    <li class="tags">html</li>
+    <li class="tags">css</li>
+    <li class="tags">javascripts</li>
+  </ul>
+  <button id=${work.id} class="btn" type="button">See Project</button>
+  
+</div>
+</div>`).join('');
+};
+
+addProjects();
+
+// Modal-card popup
 const showModal = (pid) => {
   const curPro = pro[pid];
   const sec = document.createElement('section');
